@@ -1,0 +1,366 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+p{
+    color: black;
+}
+
+                            /*header*/
+
+.container{
+    width: 100%;
+    margin: 0 auto ;    
+    padding-left: 10px;
+    padding-right: 10px;  
+    position: relative;  
+}
+.container nav a{
+    font-size:20px ;
+}
+.container-fluid{
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+
+
+header{
+    padding:15px 0;
+    position: fixed;
+    top:0;
+    width: 100%;
+    z-index: 2;
+    background-color: white;
+}
+
+header .container{
+    display: flex;
+    width: 100%;
+    height: 10rem;
+    justify-content: space-between;
+    border: 5px solid red;
+
+    padding-top: 10px;
+    margin-bottom: 30px;
+}
+header .container .navegacion{
+position: relative;      
+    top: 7.5rem;
+    background: black;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-bottom: 5px;
+    height: 3rem;    
+}
+
+header .container .logo {
+    position: relative;
+    left: 26rem;
+    width: 250px;
+}
+header .container .logo:hover {
+    width: 260px;
+}
+
+header ul{
+    display: -webkit-inline-box;
+    text-decoration: none;
+}
+header .container nav a{ 
+   color: red;
+   text-decoration: none;
+   margin: 0 15px;
+}
+header .container nav a:hover{ 
+    color: black;    
+ }
+header .container .hamb{
+    display: none;
+}
+
+header .buscar{
+    position: relative;
+    width: 5rem;
+    right: 65rem;
+    top: 2rem;
+    height: 30px;
+    padding: 5px;
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+}
+header .form-control {
+    width: 9rem;
+}
+
+header .redes{
+    font-size: 30px;
+    display: flex;
+    justify-content: space-between;
+    color: black;
+}
+
+header .redes a{
+  
+    color: black;
+}
+
+header ul li{
+    list-style: none;
+}
+
+header .redesTop .fa-phone-alt{
+    margin: 1rem 2rem;
+}
+
+                            /*Main*/
+
+.carr{
+    padding: 0;
+    
+    width: 50rem;
+   margin: auto;
+}
+
+.carr .carousel-item{
+    
+   
+}
+
+.title{
+    text-align: center;
+    margin-block-end: 10px;
+}
+
+.boton{
+    text-align: center;
+    text-decoration: none;
+    padding: 15px 20px;
+    border: none;
+}
+  
+
+.boton.boton-blanco{
+    color: red;
+    background-color:white;
+    font-size: 16px;
+    font-weight: bold;
+    border: 1px solid red;
+}
+.boton.boton-blanco:hover{
+    color: white;
+    background-color:red;
+    font-size: 16px;
+    font-weight: bold;
+    border: 1px solid red;
+}
+
+.seccion{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.cuadrado-perfecto{
+    width: 100%;
+    padding-bottom: 100%;
+    position: relative;
+}
+.cuadrado-perfecto img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+
+
+ .bloque-servicio{
+    border: 1px solid grey;
+    margin-top: 90px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 15px 20px;
+
+
+}
+
+.columna{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.columna-25{
+    width: 25%;
+}
+.columna-33{
+    width: 33%;
+}
+.columna-50{
+    width: 50%;
+}
+.columna-41{
+    width: 41.66%;
+}
+.empujar-50{
+    margin-left: 50%;
+}
+.empujar-58{
+    margin-left: 58.33%;
+}
+.empujar-66{
+    margin-left: 66.66%;
+}
+.empujar-0{
+    margin-left: 0%;
+}
+
+
+
+
+table{
+    border-collapse: separate;
+    margin: 20px 50px
+}
+table thead{
+    text-align: center;    
+    background-color: aquamarine;
+}
+
+table tbody{
+    border: 1;
+    text-align: center;    
+    background-color: rgb(183, 185, 170);
+}
+
+table tfoot{
+    text-align: center;    
+    background-color: rgb(229, 236, 234);
+}
+
+
+
+#galeria h4{
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    color: white;
+    font-size:18px ;
+    width: 100%;
+}
+#galeria img{
+  filter:grayscale(1)
+}
+#galeria .cuadrado-perfecto:hover img{
+    filter:grayscale(0)
+  }
+#galeria .cuadrado-perfecto:hover h4{
+    display: none;
+  }
+  #contactenos{
+      position: relative;
+  }
+  #contactenos iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: grayscale(1);
+}
+#contactenos form{
+    padding: 60px;
+    background-color: red;
+}
+#contactenos form .form-block{
+  width: 100%;
+  margin-bottom: 15px;
+}
+#contactenos form .form-block .form-control{
+    display: block;
+    height: 40px;
+    font-size: 16px;
+    border: 1px solid gray;
+    width: 100%;
+    padding: 5px 10px;
+  }
+  #contactenos form .form-block textarea{
+    display: block;
+    height: 100px;
+    font-size: 16px;
+    border: 1px solid gray;
+    width: 100%;
+    padding: 5px 10px;
+  }
+
+  #contactenos form .form-block.bloque-ultimo{
+  margin: 0;
+
+  }
+
+  
+                            /*Footer*/
+footer{
+    background-color: black;
+    color: white;
+    padding-top: 60px;
+}
+footer .barra-footer{
+    background-color: gray;
+    text-align: center;
+    padding-left: 15px;
+    padding-right:15px;
+    padding-top: 30px;
+    padding-bottom:20px 
+    ;
+}
+footer .logo-footer{
+    width: 100%;     
+}
+footer ul{
+    padding-left: 0;
+    list-style:none ;
+    margin: 0;
+}
+footer ul li{
+    margin: 10px;
+}
+footer p{
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+}
+footer a{
+    color: white;
+}
+footer .redes{
+    font-size: 30px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+footer .redes a{
+    margin: 0 7.5px;
+}
+
+  
