@@ -14,55 +14,82 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
 </head>
-<body class="grid-container"> 
-
-    <header class="header grid-container-header">
-        <!--Encabezado-->         
-        <div class="redesTop derecha ">               
-            <i class="fas fa-phone-alt tel">+543755999988</i>  <br> <br>                
-            <ul class="redes">
+<body class=""> 
+  <header class="header ">
+        <!--Encabezado-->
+    <div class="container">
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-12 mb-3 ">
+            <div class="">
+                <a href="index.html" >
+                    <img src="./images/logoGenerico.png" class="logo mx-auto d-block " alt="logo MueblArte">
+                </a>
+            </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+            <ul class="redes redesTop">                
                 <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
                 <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
-                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-            </ul>
-        </div> 
+                <li><a href="#"><i class="fab fa-youtube"></i></a></li>                                
+            </ul>         
+          </div>
 
-        <div class="centro">
-            <a href="index.html" >
-                <img src="./images/logoGenerico.png" class="logo" alt="logo MueblArte">
-            </a>
         </div>
- 
-        <div class="busqueda isquierda">
-            <form class="busqueda-box">
-                <input class="form-control me-2  buscar" type="search" placeholder="Search" aria-label="Buscar">
-                <button class="btn btn-outline-success buscar" type="submit">Buscar</button>
-            </form>            
-        </div>
-
-    </header>
+    </div>      
+  </header>
 
     <!--Menu Navegacion--> 
-     <nav class="navbar main-nav ">
-        <ul class="menu breadcrumb2" id="menu">
-            <li class="menu_item"><a href="./index.html" class="menu_link">Inicio</a></li>
-            <li class="menu_item container_submenu">
-                <a href="./pages/Productos.html" class="menu_link submenu_btn">Productos <i class="fas fa-chevron-down"></i> </a>
-                <ul class="submenu"> 
-                    <!--ul.submenu>li.menu_item*4>a.menu_link-->
-                    <li class="menu_item"><a href="./pages/Producto.html" class="menu_link">Muebles Cocina</a></li>
-                    <li class="menu_item"><a href="./pages/Producto.html" class="menu_link">Muebles Living</a></li>
-                    <li class="menu_item"><a href="./pages/Producto.html" class="menu_link">Muebles Dormitorio</a></li>
-                    <li class="menu_item"><a href="./pages/Producto.html" class="menu_link">Muebles Quincho</a></li>
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <div class="container-fluid menu p-3">
+          <a class="navbar-brand" href="#"><i class="fas fa-phone-alt">+543755999988</i></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+              </li>
+                            
+              <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Producto
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="./pages/Productos.html">Productos</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="./pages/Producto.html">Muebles Cocina</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="./pages/Producto.html">Muebles Living</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="./pages/Producto.html">Muebles Dormitorio</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="./pages/Producto.html">Muebles Quincho</a></li>                
                 </ul>
-            </li>
-            <li class="menu_item"><a href="./pages/nosotros.html" class="menu_link">Nosotros</a></li>
-            <li class="menu_item"><a href="./pages/contactenos.html" class="menu_link">Contacto</a></li>
-            <li class="menu_item"><a href="./pages/servicios.html" class="menu_link">Servicios</a></li>
-        </ul>
-    </nav> 
-        
-    <main class="main"> <!--Contenido-->                       
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/contactenos.html">Contacto</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/servicios.html">Servicios</a>
+              </li>
+              
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2 busqueda" type="search" placeholder="Buscar" aria-label="Search">
+              <button class="btn btn-outline-black busqueda" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+   <main class="main"> <!--Contenido-->                       
       
         <section>
             <div class="">
