@@ -1,0 +1,35 @@
+header {    
+    justify-content: space-between;
+    padding-top: .5rem;
+
+    a .logo {
+        justify-content: center;
+        width: 250px;
+        box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+
+        &:hover {
+            border: .2rem solid $colorSecundario;
+        }
+    }    
+
+    .redesTop {
+        i {
+            font-size: 1rem;                   
+        }        
+        
+        a{            
+            .fab { 
+                font-size: 2rem;
+                color: $colorPrincipal;
+                margin: 0 2.5rem; 
+                
+                &:hover {
+                    color: $colorSecundario; 
+                }
+            }
+            
+        }
+    }
+}/*FIN  Estilos Header*/
