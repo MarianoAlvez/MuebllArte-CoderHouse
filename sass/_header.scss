@@ -5,12 +5,10 @@ header {
     a .logo {
         justify-content: center;
         width: 250px;
-        box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-        -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-        -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+        box-shadow:$shadowRightBottom;
 
         &:hover {
-            border: .2rem solid $colorSecundario;
+            border: .2rem outset $colorSecundario;
         }
     }    
 

@@ -31,5 +31,10 @@
         .dropdown-menu {
             background: $colorSecundario;
         }
+
+        .busqueda {
+            border: 2px inset black;
+            box-shadow:$shadowRightBottom;
+        }
     }
 }
